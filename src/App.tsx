@@ -1,4 +1,5 @@
 import "./App.css";
+import SearchAppBar from "./components/SearchAppBar";
 import CharactersCards from "./components/CharactersCards";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
@@ -6,7 +7,8 @@ import Grid from "@mui/material/Grid";
 function App() {
   return (
     <div className="App">
-      <Container>
+      <SearchAppBar />
+      <Container sx={{ marginY: 5 }}>
         <Grid container spacing={3}>
           <CharactersCards />
           <CharactersCards />
